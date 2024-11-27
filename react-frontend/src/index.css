@@ -1,0 +1,248 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table styles */
+.table-container {
+    overflow-x: auto;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+    text-align: left;
+    padding: 12px 16px;
+    border: 1px solid #eaeaea;
+}
+
+.user-table th {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.user-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-btn {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+    background-color: #f3f3f3;
+}
+
+.page-btn.active {
+    background-color: #6a5acd;
+    color: #ffffff;
+    border-color: #6a5acd;
+}
+
+.prev-btn,
+.next-btn {
+    font-weight: bold;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #f3f3f3;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-numbers {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-btn {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+    background-color: #f3f3f3;
+}
+
+.page-btn.active {
+    background-color: #6a5acd;
+    color: #ffffff;
+    border-color: #6a5acd;
+}
+
+.page-btn:disabled {
+    cursor: not-allowed;
+    background-color: #eaeaea;
+    color: #aaa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    text-decoration: none;
+    color: #6a5acd;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #483d8b;
+}
+
+.user-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-details {
+    font-size: 1rem;
+    color: #555;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.post-card {
+    position: relative;
+    /* Ensures delete button is positioned relative to the card */
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #e60000;
+}
+
+.delete-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 77, 77, 0.5);
+}
