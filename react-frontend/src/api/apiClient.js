@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:4001';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const DEFAULT_PAGE_LIMIT = process.env.REACT_APP_DEFAULT_PAGE_LIMIT || 10;
 
 export const fetchUsers = async (page) => {
     const response = await fetch(`${API_BASE_URL}/users?page=${page}&limit=10`);
