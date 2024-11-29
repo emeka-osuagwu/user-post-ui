@@ -1,7 +1,7 @@
 const request = require('supertest');
 const express = require('express');
 const cors = require('cors');
-const { getUsers, getUserById, createUser, deletePost } = require('../handlers/userHandlers');
+const { getUsers, getUserById, createUser, deletePost } = require('../controller/userController');
 const { createMockDB } = require('./setupTestDB');
 
 let app;
