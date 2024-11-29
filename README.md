@@ -59,3 +59,47 @@ Follow these instructions to set up and run the project on your local machine.
 1. **Navigate to the backend directory:**
    ```bash
    cd sqlite-backend
+
+   
+1.  bashCopy codecp .env.example .env
+    
+2.  bashCopy codenpm install
+    
+3.  bashCopy codenpm run dev
+    
+4.  bashCopy codehttp://localhost:5000/api/users
+    
+
+### Frontend Setup
+
+1.  bashCopy codecd react-frontend
+    
+2.  envCopy codeREACT\_APP\_BACKEND\_URL=http://localhost:5000
+    
+3.  bashCopy codenpm install
+    
+4.  bashCopy codenpm start
+    
+5.  arduinoCopy codehttp://localhost:3000
+    
+
+Running Tests
+-------------
+
+This project includes unit and integration tests for both the backend and frontend.
+
+### Run Backend Tests
+
+1.  cd sqlite-backend
+    
+2.  npm run test
+    
+3.  View the test results in the terminal.
+    
+
+### Run Frontend Tests
+
+1.  cd react-frontend
+    
+2.  npm run test
+    
