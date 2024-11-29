@@ -23,6 +23,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res, next) => getUsers(req, res, next, db));
 app.get('/users', (req, res, next) => getUsers(req, res, next, db));
 app.get('/user/:id', (req, res, next) => getUserById(req, res, next, db));
 app.post('/user', (req, res, next) => createUser(req, res, next, db));
