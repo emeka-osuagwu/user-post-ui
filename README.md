@@ -61,26 +61,26 @@ Follow these instructions to set up and run the project on your local machine.
    cd sqlite-backend
 
    
-1.  bashCopy codecp .env.example .env
+1.  cp .env.example .env
     
-2.  bashCopy codenpm install
+2.  npm install
     
-3.  bashCopy codenpm run dev
+3.  npm run dev
     
-4.  bashCopy codehttp://localhost:5000/api/users
+4.  http://localhost:5000/api/users
     
 
 ### Frontend Setup
 
-1.  bashCopy codecd react-frontend
+1.  cd react-frontend
     
-2.  envCopy codeREACT\_APP\_BACKEND\_URL=http://localhost:5000
+2.  REACT\_APP\_BACKEND\_URL=http://localhost:5000
     
-3.  bashCopy codenpm install
+3.  npm install
     
 4.  bashCopy codenpm start
     
-5.  arduinoCopy codehttp://localhost:3000
+5.  http://localhost:3000
     
 
 Running Tests
